@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #000;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+#container {
+  width: 100%;
+  min-height: 700px;
+  height: 100vh;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+#content {
+  width: 998px;
+  height: 775px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4%;
+}
+
+#content_left {
+  float: left;
+  width: 70%;
+  height: 90vh;
+  background-color: #fff;
+}
+
+#content_left:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#content_info {
+  height: 8vh;
+}
+
+#content_header {
+  margin-top: 10px;
+  position: relative;
+}
+
+#content_header .fa-play {
+  position: absolute;
+  top: 15px;
+  left: 24px;
+  font-size: 33px !important;
+}
+
+#content_header h2 {
+  position: absolute;
+  top: -15px;
+  left: 65px;
+  color: #555;
+}
+
+#content_header #video_banner_img {
+  background: url('../img/video_banner.png') no-repeat scroll 0 0;
+  margin-right: 22px;
+  height: 10vh;
+}
+
+#video_container {
+  height: 77vh;
+  padding-top: 5px;
+  margin: 10px 20px 20px 20px;
+  background: #EFEEF1;
+}
+
+#video_player {
+  width: 99%;
+  height: 400px;
+  margin: 0 auto 20px auto;
+  background: #666;
+}
+
+#video_info {
+  float: left;
+  text-align: right;
+  position: relative;
+  margin: 0 0 0 15px;
+  width: 95%;
+}
+
+#video_info:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#YT_button {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 9px 12px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #E62117;
+  transition: all 0.5s;
+  font-size: 25px !important;
+}
+
+#YT_button:hover {
+  font-size: 33px !important;
+}
+
+#dot_button {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 65px;
+  padding: 9px 17px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #85bb65;
+  transition: all 0.5s;
+  font-size: 25px !important;
+}
+
+#dot_button:hover {
+  font-size: 33px !important;
+}
+
+#fb_button {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 130px;
+  padding: 10px 17px 7px 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3B5998;
+  transition: all 0.5s;
+  font-size: 25px !important;
+}
+
+#fb_button:hover {
+  font-size: 33px !important;
+}
+
+.tooltip {
+	display: none;
+	position: absolute;
+	border: 1px solid #333;
+	background-color: #161616;
+	padding: 10px;
+	color: #fff;
+	font-size: 15px;
+}
+
+#game_info {
+  background-color: ##EFEEF1;
+  margin: 55px auto;
+  width: 95%;
+  height: 17vh;
+  position: relative;
+}
+
+#game_info_title h3 {
+  margin: 0 2px 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #95919B;
+  color: #111;
+}
+
+#game_info_box {
+  width: 90%;
+  height: 9vh;
+  margin: 10px 0 0 30px;
+  display: inline-block;
+}
+
+#game_info_box:hover {
+  cursor: pointer;
+}
+
+#info_box_img {
+  position: absolute;
+  margin: 25px 0 0 0;
+  transition: all 1s;
+}
+
+#info_box_img:hover + #info_box_link {
+  cursor: pointer;
+}
+
+#info_box_link{
+  position: absolute;
+  margin: 26px 0 0 40px;
+  font-size: 22px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 1s;
+}
+
+#info_box_link:hover {
+  cursor: pointer;
+}
+
+#content_right {
+  float: left;
+  width: 30%;
+  height: 90vh;
+  background-color: #fff;
+}
+
+#content_right_title {
+  text-align: right;
+  margin-right: 40px;
+  color: #555;
+}
+
+#chat_container {
+  width: 92%;
+  margin: 0 40px 0 0;
+  height: 77vh;
+  background-color: #fff;
+}
