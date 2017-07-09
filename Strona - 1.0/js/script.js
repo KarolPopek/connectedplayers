@@ -1,13 +1,42 @@
+const pressed =[];
+const secretCode = 'connectedplayers123';
 
-function RetrieveFromLocalStorage() 
+window.addEventListener('keyup', (e) => 
 {
-        var retrivedValue1 = 'None';
-		var retrivedValue2 = 'None';
+		pressed.push(e.key);
+		pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
 		
-        var retrivedValue1 = localStorage.getItem('LocalStorageKey1', retrivedValue1);
-		var retrivedValue2 = localStorage.getItem('LocalStorageKey2', retrivedValue2);
-		
-        $("#videoTitle").text(retrivedValue1);
+		if(pressed.join('').includes(secretCode)) 
+		{
+			window.location = "login/login.html";
+		}
+});
+
+function getOnline() 
+{
+	$.get("php/visitors_js.php").done(function(data)
+		{
+			$("#onlineCount").fadeIn(5000);
+			retrivedValue3 = data;
+			$('#onlineCount').text(retrivedValue3);
+			$("#onlineCount").fadeOut(5000);
+		});
+}
+
+	 
+ $().ready(function ()
+ { 
+	setInterval(getOnline, 8000);
+	
+	$.getJSON("login/php/title-contents.json", function(data) 
+	{
+		retrivedValue1 = data;
+		$("#videoTitle").text(retrivedValue1);
+	});
+	
+	$.getJSON("login/php/games-contents.json", function(data) 
+	{
+		retrivedValue2 = data;
 		$("#gameName").text(retrivedValue2);
 		
 		if (retrivedValue2 == "CS - Global Offensive")
@@ -34,29 +63,5 @@ function RetrieveFromLocalStorage()
 		{
 			$(".gameImg").attr("src","img/b3.png");
 		}
-}
-	
-$(document).ready(function() 
-{ 
-	RetrieveFromLocalStorage();
-	
-	var token = '';
-	var pinger = setInterval(function ()
-	{
-		$.ajax({
-			cache: false,
-			data: {
-				token: token,
-			},
-		  
-		timeout: 2500,
-		type: 'GET',
-		url: 'php/pinger.php',
-		dataType: 'json',
-		success: function (data, status, jqXHR){
-			$('#userCount').text(data.userCount);
-			token = data.token;
-		}
-    });
-  }, 5000);
- });
+	});
+});

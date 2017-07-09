@@ -33,7 +33,7 @@ div.main{
 	margin: 150px auto;
 	background-color: #FEFFED;
 }
-input{
+input, select{
 	width: 100%;
 	height: 40px;
 	padding: 5px;
@@ -44,7 +44,7 @@ input{
 	font-size: 16px;
 	border-radius: 5px;
 }
-label{
+label, select{
 	color: #464646;
 	text-shadow: 0 1px 0 #fff;
 	font-size: 14px;
@@ -85,4 +85,10 @@ input[type=button]:hover{
 	background: -moz-linear-gradient(#ffdd7f 5%, #ffbc00 100%);
 	background: -o-linear-gradient(#ffdd7f 5%, #ffbc00 100%);
 	background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+}
+
+input:disabled{
+    opacity: 0.6;
+	filter: grayscale(100%);
+	
 }

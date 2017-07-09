@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
 <title>Panel Administratora</title>
 <link rel="stylesheet" href="css/style.css"/>
@@ -14,27 +15,23 @@
 	<div class="container">
 		<div class="main">
 			<h2>Panel Administratora</h2>
-			<form id="form_id" method="post" name="myform">
+			<form id="form_id" name="myform" method="POST">
 				<label>Title :</label>
 				<input type="text" name="title" id="title"/>
-				<label>Game :</label>
-				<input  list="games" id="game">
-				<datalist id="games">
-					<option data-id="CS" value="CS - Global Offensive"></option>
-					<option data-id="H1Z1" value="H1Z1: Just Survive"></option>
-					<option data-id="ETS2" value="Euro Truck Simulator 2"></option>
-					<option data-id="Rust" value="Rust"></option>
-					<option data-id="Rust" value="Minecraft"></option>
-					<option data-id="B3" value="Battlefield 3"></option>
-				</datalist>
-				
-				<label>Password :</label>
-				<input type="password" name="password" id="password"/>
-				<input type="button" value="Save" id="submit" onclick="validate()"/>
+				<label>Games :</label>
+				<select id="games" name="games">
+					<option data-id="CS" value="CS - Global Offensive">CS - Global Offensive</option>
+					<option data-id="H1Z1" value="H1Z1: Just Survive">H1Z1: Just Survive</option>
+					<option data-id="ETS2" value="Euro Truck Simulator 2">Euro Truck Simulator 2</option>
+					<option data-id="Rust" value="Rust">Rust</option>
+					<option data-id="Rust" value="Minecraft">Minecraft</option>
+					<option data-id="B3" value="Battlefield 3">Battlefield 3</option>
+				</select>
+				<input type="button" value="Save" id="submit"/>
 			</form>
 		</div>
 	</div>
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	 <script src="js/login.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <script src="js/login.min.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-	<title>ConnectedPlayers</title>
+	<title>ConnectedPlayers - Łączmy się</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="language" content="en"/>
 	<meta name="Content-Language" content="en"/>
@@ -11,7 +11,6 @@
 	<meta name="keywords" content="video,gaming,Counter-Strike: Global Offensive"/>
 	<link rel="stylesheet" type="text/css" media="screen" href="css/bp.css"/>
 	<link rel="stylesheet" type="text/css" media="screen" href="css/gc.css"/>
-	<link rel="stylesheet" type="text/css" media="screen" href="css/popup.css"/> 
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png?v=ngG7y92kBy">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png?v=ngG7y92kBy">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png?v=ngG7y92kBy">
@@ -28,19 +27,27 @@
 				<div id="thinInfoDiv" class="gradient1">
 					<ul class="defaultList floatLeft">
 						<li>
-							<div class="paddingT2 marginR10 entyTypeImg"><img src="img/video-film.png"/></div>
+							<div class="paddingT3 marginR10 entyTypeImg"><img src="img/video-film.png" alt="video-film"></div>
 						</li>
 						<li>
-							<div class="paddingT10 marginR5"><span class="bold">Video</span></div>
+							<div class="marginT10 marginR3"><span class="bold">Video</span></div>
 						</li>
 						<li>
 							<div class="paddingT10">•</div>
 						</li>
 						<li>
-							<div class="paddingT5">
-								Hosted by
-								<img src="img/logo.png" alt="World" title="World"/ >				
-								<a href="login.html" title="connectedplayers" alt="connectedplayers">ConnectedPlayers</a>
+							<div class="paddingT10 marginR5">
+								<span>Hosted by</span>				
+							</div>
+						</li>
+						<li>
+							<div class="marginT8">
+								<img src="img/logo.png" alt="World" title="World">				
+							</div>
+						</li>
+						<li>
+							<div class="paddingT10">
+								<a href="" title="connectedplayers">ConnectedPlayers</a>
 							</div>
 						</li>
 					</ul>
@@ -50,7 +57,7 @@
 				</div>
 				<div id="entityHeader" class="videoHeader videoBckg">
 					<div id="entityInfo" class="videoInfo">
-						<div class="transparentBar">
+						<div class="transparentBar paddingT5">
 							<div id="videoTitle">CS - Global Offensive</div>
 							<div class="spacer"></div>
 						</div>
@@ -68,9 +75,9 @@
 									<li>
 										<div class="font10 marginR10">
 											<div class="standardBtnWrapper">
-												<a href="https://www.facebook.com/ConnectedPlayers/" target="_blank" class="standardBtn standardBtn2 gradient1 defaultLink5" id="stBtn_300" >
-													<div class="content ">
-														<img src="img/thumb-up.png"/>Facebook
+												<a href="https://www.facebook.com/ConnectedPlayers/" target="_blank" class="standardBtn standardBtn2 gradient1 defaultLink5" >
+													<div class="content">
+														<img src="img/thumb-up.png" alt="thumb-up">Facebook
 													</div>
 												</a>
 												<div class="spacer"></div>
@@ -80,9 +87,9 @@
 								<li>
 									<div class="font10  marginR10">
 										<div class="standardBtnWrapper">
-											<a class="standardBtn standardBtn2 gradient1 defaultLink5" id="stBtn_9850" href="https://tipanddonation.com/krzerexyt" target="_blank">	
+											<a class="standardBtn standardBtn2 gradient1 defaultLink5" href="https://tipanddonation.com/krzerexyt" target="_blank">	
 												<div class="content">
-													<img src="img/info.png"/>Dotacja
+													<img src="img/info.png" alt="info">Dotacja
 												</div>
 											</a>
 											<div class="spacer"></div>
@@ -92,9 +99,9 @@
 								<li>
 									<div class="font10  marginR10">
 										<div class="standardBtnWrapper">
-											<a class="standardBtn standardBtn2 gradient1 defaultLink5" id="stBtn_9850" href="https://www.youtube.com" target="_blank">	
-												<div class="content ">
-													<img src="img/share.png"/>Archiwum
+											<a class="standardBtn standardBtn2 gradient1 defaultLink5" href="https://www.youtube.com" target="_blank">	
+												<div class="content">
+													<img src="img/shared.png">Archiwum
 												</div>
 											</a>
 											<div class="spacer"></div>
@@ -105,8 +112,8 @@
 					</div>
 				</div>		
 				<div class="floatRight">
-					<img src="img/eye.png" class="sq32 floatLeft marginR5"/>
-					<div class="floatLeft marginT5 font16 bold colorBlack" id="userCount"></div>
+					<img src="img/eye.png" class="sq32 floatLeft marginR5" alt="online_eye">
+					<div class="floatLeft marginT5 font16 bold colorBlack"><span id="onlineCount"></span></div>
 				</div>
 				<div class="spacer"></div>		
 			</div>
@@ -119,8 +126,8 @@
 					</div>
 					<div class="videoDetailsList height50px">
 						<ul class="defaultList marginT10">
-							<li class="floatLeft marginT10">
-								<img class="gameImg" src="img/cs.jpg"/>
+							<li class="floatLeft marginT15">
+								<img class="gameImg" src="img/cs.jpg" alt="cs">
 								<div class="floatLeft">
 									<a href="" class="defaultLink5 marginT20" id="gameName">Counter-Strike: Global Offensive</a>
 								</div>
@@ -154,6 +161,6 @@
 </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/script.min.js"></script>
 </body>
 </html>

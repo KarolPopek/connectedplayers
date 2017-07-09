@@ -1,0 +1,4 @@
+
+:Location *.(gif|jpg|png|css|js|html)
+Expires M2592000
+:Location
